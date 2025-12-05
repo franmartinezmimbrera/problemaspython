@@ -1,8 +1,10 @@
+# -*- coding: iso-8859-15 -*-
 # fichero raizcuadrada.py
 # Este programa calcula la raíz cuadrada de un número
 import math
 
 def calcular_raiz():
+    
     try:
         numero = float(input("Introduce un número: "))
         if numero < 0:

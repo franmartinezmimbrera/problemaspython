@@ -1,7 +1,9 @@
+# -*- coding: iso-8859-15 -*-
 # fichero capturar.py
-# Este programa hace preguntas y con ello hace respuestas 
+# Este programa recopila datos del usuario mediante preguntas
 
 def capturar_datos():
+    
     nombre = input("Introduce tu nombre (texto): ")
     edad = int(input("Introduce tu edad (entero): "))
     altura = float(input("Introduce tu altura en metros (decimal): "))

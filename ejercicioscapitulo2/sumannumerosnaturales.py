@@ -1,7 +1,9 @@
+# -*- coding: iso-8859-15 -*-
 # fichero sumannumerosnaturales.py
-#  Este programa calcula la suma de los "n" primeros números naturales 
+# Este programa calcula la suma de los "n" primeros números naturales 
 
-def suma_gauss():
+def suma_nnumeros_naturales():
+
     try:
         n = int(input("Introduce un número entero 'n': "))
         
@@ -19,4 +21,4 @@ def suma_gauss():
         print("Debes introducir un número entero.")
 
 if __name__ == "__main__":
-    suma_gauss()
+    suma_nnumeros_naturales()

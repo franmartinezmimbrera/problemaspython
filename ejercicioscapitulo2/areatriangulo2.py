@@ -1,8 +1,10 @@
+# -*- coding: iso-8859-15 -*-
 # fichero areatriangulo2.py 
-#  Este programa calcula el área de un triáungulo equilátero a partir de uno de sus lados
+# Calcula el área de un triáungulo equilátero a partir de uno de sus lados
 import math
 
 def area_triangulo_equi():
+    
     try:
         lado = float(input("Introduce el lado del triángulo equilátero: "))
         

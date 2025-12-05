@@ -1,8 +1,11 @@
+# -*- coding: iso-8859-15 -*-
 # fichero estadisticas.py 
 # Este programa calcula estadísticas sobre alumnos
    
 def calcular_estadisticas():
+
     try:
+    
         print("Introduce el número de alumnos por categoría:")
         suspensos = int(input("Suspensos: "))
         aprobados = int(input("Aprobados (5-6): "))
@@ -15,7 +18,6 @@ def calcular_estadisticas():
             print("No hay alumnos en la clase.")
             return
             
-        # Alumnos que superan la asignatura (Aprob + Not + Sob)
         superan = aprobados + notables + sobresalientes
         
         porc_superan = (superan / total_alumnos) * 100
@@ -24,7 +26,7 @@ def calcular_estadisticas():
         porc_sobresalientes = (sobresalientes / total_alumnos) * 100
         porc_aprobados_strict = (aprobados / total_alumnos) * 100
         
-        print("\n--- Estadísticas de la Clase ---")
+        print("Estadísticas de la Clase")
         print(f"Total alumnos: {total_alumnos}")
         print(f"% que superan la asignatura: {porc_superan:.2f}%")
         print(f"% de suspensos:              {porc_suspensos:.2f}%")

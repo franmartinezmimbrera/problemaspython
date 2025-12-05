@@ -1,7 +1,9 @@
+# -*- coding: iso-8859-15 -*-
 # fichero costecoche.py 
 # Este programa calcula el precio total de un coche
 
 def coste_coche():
+    
     GANANCIA = 0.15 # 15%
     IVA = 0.21      # 21%
     

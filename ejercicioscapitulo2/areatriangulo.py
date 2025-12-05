@@ -1,8 +1,10 @@
+# -*- coding: iso-8859-15 -*-
 # fichero areatriangulo.py 
 # Este programa calcula el área de un triáungulo a partir de sus lados mediante la fórmula de Herón
 import math
 
 def area_heron():
+    
     print("Introduce los 3 lados del triángulo:")
     try:
         l1 = float(input("Lado 1: "))

@@ -1,3 +1,4 @@
+# -*- coding: iso-8859-15 -*-
 # fichero raizenesima.py
 # Este programa calcula la raíz n-ésima de un número
 def raiz_enesima():
@@ -8,10 +9,8 @@ def raiz_enesima():
         if n == 0:
             print("No existe la raíz 0-ésima.")
             return
-
-        # Raíz n-ésima es lo mismo que elevar a la potencia (1/n)
-        resultado = base ** (1/n) # También se puede usar pow(base, 1/n)
-        
+   
+        resultado = base ** (1/n) # También se puede usar pow(base, 1/n)        
         print(f"La raíz {n}-ésima de {base} es: {resultado:.4f}")
         
     except ValueError:
