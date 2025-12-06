@@ -1,9 +1,8 @@
-# -*- coding: iso-8859-15 -*-
 # fichero ladotriangulo.py
-# Este programa calcula el valor del lado a de un triangulo rect·ngulo usando el valor del lado b y la hipotenusa h 
+# Este programa calcula el valor del lado a de un triangulo rect√°ngulo usando el valor del lado b y la hipotenusa h 
 import math
 def calcular_cateto():
-    print("C·lculo del cateto 'a' (h^2 = a^2 + b^2)")
+    print("C√°lculo del cateto 'a' (h^2 = a^2 + b^2)")
     try:
         h = float(input("Introduce la hipotenusa (h): "))
         b = float(input("Introduce el otro cateto (b): "))       
@@ -13,6 +12,6 @@ def calcular_cateto():
         a = math.sqrt(h**2 - b**2)
         print(f"El valor del cateto 'a' es: {a:.4f}")
     except ValueError:
-        print("Error numÈrico.")
+        print("Error num√©rico.")
 if __name__ == "__main__":
     calcular_cateto()

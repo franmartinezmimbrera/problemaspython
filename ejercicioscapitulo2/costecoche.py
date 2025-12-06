@@ -1,4 +1,3 @@
-# -*- coding: iso-8859-15 -*-
 # fichero costecoche.py 
 # Este programa calcula el precio total de un coche
 
@@ -6,21 +5,16 @@ def coste_coche():
     
     GANANCIA = 0.15 # 15%
     IVA = 0.21      # 21%
-    
     try:
-        coste_fabricacion = float(input("Introduce el coste de fabricación: "))
-        
-        # Precio con ganancia
+        coste_fabricacion = float(input("Introduce el coste de fabricaciÃ³n: "))
         precio_con_ganancia = coste_fabricacion * (1 + GANANCIA)
-        
-        # Precio final (aplicando IVA al precio con ganancia)
         precio_final = precio_con_ganancia * (1 + IVA)
         
-        print(f"Coste fabricación: {coste_fabricacion:.2f} ¤")
-        print(f"Precio venta final (con ganancia e IVA): {precio_final:.2f} ¤")
+        print(f"Coste fabricaciÃ³n: {coste_fabricacion:.2f} â‚¬")
+        print(f"Precio venta final (con ganancia e IVA): {precio_final:.2f} â‚¬")
         
     except ValueError:
-        print("Error numérico.")
+        print("Error numÃ©rico.")
 
 if __name__ == "__main__":
     coste_coche()

@@ -1,10 +1,9 @@
 #fichero sumaparesimpares.py
-#Calcula la suma de 10 números pasados por teclado distinguiendo entre los pares e impares 
+#Calcula la suma de 10 nÃºmeros pasados por teclado distinguiendo entre los pares e impares 
 def sumar_pares_impares():
     numeros = []
-    print("Introduce 10 números:")
+    print("Introduce 10 nÃºmeros:")
     
-    # Lectura de datos
     for i in range(10):
         val = int(input(f"Dato {i+1}: "))
         numeros.append(val)

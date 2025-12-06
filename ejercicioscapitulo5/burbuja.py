@@ -5,14 +5,14 @@ def ordenacion_burbuja(lista):
     for i in range(n):
         intercambio = False
         
-        # Últimos i elementos ya están ordenados
+        # Ãšltimos i elementos ya estÃ¡n ordenados
         for j in range(0, n - i - 1):
             # Intercambiar si el elemento encontrado es mayor que el siguiente
             if lista[j] > lista[j + 1]:
                 lista[j], lista[j + 1] = lista[j + 1], lista[j]
                 intercambio = True
         
-        # Si no hubo intercambios en la pasada, la lista ya está ordenada
+        # Si no hubo intercambios en la pasada, la lista ya estÃ¡ ordenada
         if not intercambio:
             break
     return lista

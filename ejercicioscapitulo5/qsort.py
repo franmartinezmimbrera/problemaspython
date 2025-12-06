@@ -1,14 +1,14 @@
-# fichero qsort.cpp 
+# fichero qsort.py
 
 def quicksort(lista):
-    # Caso base: listas de 0 o 1 elemento ya est·n ordenadas
+    # Caso base: listas de 0 o 1 elemento ya est√°n ordenadas
     if len(lista) <= 1:
         return lista
     
-    # Elegimos el pivote (aquÌ tomamos el ˙ltimo elemento)
+    # Elegimos el pivote (aqu√≠ tomamos el √∫ltimo elemento)
     pivote = lista[-1]
     
-    # ParticiÛn
+    # Partici√≥n
     menores = [x for x in lista[:-1] if x <= pivote]
     mayores = [x for x in lista[:-1] if x > pivote]
     

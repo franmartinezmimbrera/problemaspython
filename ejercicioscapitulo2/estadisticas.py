@@ -1,12 +1,11 @@
-# -*- coding: iso-8859-15 -*-
 # fichero estadisticas.py 
-# Este programa calcula estadísticas sobre alumnos
+# Este programa calcula estadÃ­sticas sobre alumnos
    
 def calcular_estadisticas():
 
     try:
     
-        print("Introduce el número de alumnos por categoría:")
+        print("Introduce el nÃºmero de alumnos por categorÃ­a:")
         suspensos = int(input("Suspensos: "))
         aprobados = int(input("Aprobados (5-6): "))
         notables = int(input("Notables (7-8): "))
@@ -26,7 +25,7 @@ def calcular_estadisticas():
         porc_sobresalientes = (sobresalientes / total_alumnos) * 100
         porc_aprobados_strict = (aprobados / total_alumnos) * 100
         
-        print("Estadísticas de la Clase")
+        print("EstadÃ­sticas de la Clase")
         print(f"Total alumnos: {total_alumnos}")
         print(f"% que superan la asignatura: {porc_superan:.2f}%")
         print(f"% de suspensos:              {porc_suspensos:.2f}%")
@@ -35,7 +34,7 @@ def calcular_estadisticas():
         print(f"% de aprobados (nota 5-6):   {porc_aprobados_strict:.2f}%")
         
     except ValueError:
-        print("Introduce números enteros.")
+        print("Introduce nÃºmeros enteros.")
 
 if __name__ == "__main__":
     calcular_estadisticas()

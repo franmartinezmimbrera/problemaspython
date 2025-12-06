@@ -6,7 +6,7 @@ def leer_fichero():
             print("--- Contenido del archivo ---")
             # Podemos iterar directamente sobre el objeto archivo
             for linea in archivo:
-                print(linea.strip()) # strip() elimina el salto de línea doble
+                print(linea.strip()) # strip() elimina el salto de lÃ­nea doble
                 
     except FileNotFoundError:
         print("El archivo 'datos.txt' no existe. Ejecuta el ejercicio anterior primero.")

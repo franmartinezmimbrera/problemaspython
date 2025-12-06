@@ -1,5 +1,5 @@
 #fichero factorialR.py
-#Calcula el factorial de un número entero no negativo de forma recursiva. 
+#Calcula el factorial de un nÃºmero entero no negativo de forma recursiva. 
 
 def factorial_recursivo(n):
     if n < 0:
@@ -11,5 +11,5 @@ def factorial_recursivo(n):
     return n * factorial_recursivo(n - 1)
 
 if __name__ == "__main__":
-    num = int(input("Introduce un número (recursivo): "))
+    num = int(input("Introduce un nÃºmero (recursivo): "))
     print(f"Factorial: {factorial_recursivo(num)}")

@@ -4,12 +4,12 @@ def mergesort(lista):
     if len(lista) <= 1:
         return lista
 
-    # División
+    # DivisiÃ³n
     medio = len(lista) // 2
     izquierda = mergesort(lista[:medio])
     derecha = mergesort(lista[medio:])
 
-    # Fusión (Merge)
+    # FusiÃ³n (Merge)
     return merge(izquierda, derecha)
 
 def merge(izquierda, derecha):
@@ -25,7 +25,7 @@ def merge(izquierda, derecha):
             resultado.append(derecha[j])
             j += 1
             
-    # Añadir los elementos restantes
+    # AÃ±adir los elementos restantes
     resultado.extend(izquierda[i:])
     resultado.extend(derecha[j:])
     

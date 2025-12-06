@@ -1,8 +1,8 @@
-# fichero qsort2.py
+# fichero timsort.py
 
 def ordenacion_timsort_nativa(lista):
-    # Python utiliza TimSort en sus métodos built-in
-    # Opción A: sorted() devuelve una nueva lista ordenada
+    
+    # Python utiliza TimSort en sus mÃ©todos built-in    
     nueva_lista = sorted(lista)
     return nueva_lista
 

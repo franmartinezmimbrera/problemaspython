@@ -1,31 +1,30 @@
-# -*- coding: iso-8859-15 -*-
 # fichero areatriangulo.py 
-# Este programa calcula el área de un triáungulo a partir de sus lados mediante la fórmula de Herón
+# Este programa calcula el Ã¡rea de un triÃ¡ungulo a partir de sus lados mediante la fÃ³rmula de HerÃ³n
 import math
 
 def area_heron():
     
-    print("Introduce los 3 lados del triángulo:")
+    print("Introduce los 3 lados del triÃ¡ngulo:")
     try:
         l1 = float(input("Lado 1: "))
         l2 = float(input("Lado 2: "))
         l3 = float(input("Lado 3: "))
         
-        # Semiperímetro
+        # SemiperÃ­metro
         sp = (l1 + l2 + l3) / 2
         
-        # Fórmula de Herón
-        # Comprobamos que el valor dentro de la raíz sea positivo (triángulo válido)
+        # FÃ³rmula de HerÃ³n
+        # Comprobamos que el valor dentro de la raÃ­z sea positivo (triÃ¡ngulo vÃ¡lido)
         radicando = sp * (sp - l1) * (sp - l2) * (sp - l3)
         
         if radicando < 0:
-            print("Los lados introducidos no forman un triángulo válido.")
+            print("Los lados introducidos no forman un triÃ¡ngulo vÃ¡lido.")
         else:
             area = math.sqrt(radicando)
-            print(f"El área del triángulo es: {area:.4f}")
+            print(f"El Ã¡rea del triÃ¡ngulo es: {area:.4f}")
             
     except ValueError:
-        print("Error numérico.")
+        print("Error numÃ©rico.")
 
 if __name__ == "__main__":
     area_heron()

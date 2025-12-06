@@ -1,4 +1,3 @@
-# -*- coding: iso-8859-15 -*-
 # fichero preciomedio.py 
 # Este programa calcula el precio medio de un producto
 
@@ -14,7 +13,7 @@ def precio_medio():
         
         media = (p1 + p2 + p3) / 3
     
-        print(f"El precio medio del producto es: {media:.2f} ¤")
+        print(f"El precio medio del producto es: {media:.2f} â‚¬")
         
     except ValueError:
         print("Error en la entrada de datos.")

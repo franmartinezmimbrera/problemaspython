@@ -1,10 +1,9 @@
-# -*- coding: iso-8859-15 -*-
 # fichero binomiosuma.py
 # Este programa calcula el binomio de suma de a+b al cuadrado 
 
 def binomio_cuadrado():
 
-    print("Cálculo de (a + b)^2")
+    print("CÃ¡lculo de (a + b)^2")
 
     try:
         a = float(input("Introduce a: "))
@@ -15,7 +14,7 @@ def binomio_cuadrado():
         print(f"El resultado del binomio al cuadrado es: {resultado}")
         
     except ValueError:
-        print("Error numérico.")
+        print("Error numÃ©rico.")
 
 if __name__ == "__main__":
     binomio_cuadrado()

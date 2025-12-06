@@ -1,13 +1,12 @@
-# -*- coding: iso-8859-15 -*-
 # fichero areatriangulo1.py 
-# Calcula el área de un triáungulo rectángulo a partir de b y a
+# Calcula el Ã¡rea de un triÃ¡ungulo rectÃ¡ngulo a partir de b y a
 def area_triangulo_rect():
     try:
         base = float(input("Introduce la base: "))
         altura = float(input("Introduce la altura: "))
         area = (base * altura) / 2
-        print(f"El área del triángulo rectángulo es: {area}")
+        print(f"El Ã¡rea del triÃ¡ngulo rectÃ¡ngulo es: {area}")
     except ValueError:
-        print("Error numérico.")
+        print("Error numÃ©rico.")
 if __name__ == "__main__":
     area_triangulo_rect()

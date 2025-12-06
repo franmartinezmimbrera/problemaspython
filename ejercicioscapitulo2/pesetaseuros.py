@@ -1,6 +1,5 @@
-# -*- coding: iso-8859-15 -*-
 # fichero pesetaseuros.py
-# Este programa realiza la conversión de  pesetas a euros
+# Este programa realiza la conversiÃ³n de  pesetas a euros
 def conversor():
     
     FACTOR_CONVERSION = 166.386
@@ -9,6 +8,6 @@ def conversor():
         euros = pesetas / FACTOR_CONVERSION
         print(f"{pesetas} pesetas equivalen a {euros:.2f} euros.")
     except ValueError:
-        print("Error: Entrada no numérica.")
+        print("Error: Entrada no numÃ©rica.")
 if __name__ == "__main__":
     conversor()

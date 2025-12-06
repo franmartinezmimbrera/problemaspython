@@ -1,24 +1,23 @@
-# -*- coding: iso-8859-15 -*-
 # fichero sumannumerosnaturales.py
-# Este programa calcula la suma de los "n" primeros números naturales 
+# Este programa calcula la suma de los "n" primeros nÃºmeros naturales 
 
 def suma_nnumeros_naturales():
 
     try:
-        n = int(input("Introduce un número entero 'n': "))
+        n = int(input("Introduce un nÃºmero entero 'n': "))
         
         if n < 0:
-            print("Por favor, introduce un número positivo.")
+            print("Por favor, introduce un nÃºmero positivo.")
             return
 
-        # Aplicamos la fórmula: n * (n + 1) / 2
-        # Usamos // para división entera
+        # Aplicamos la fÃ³rmula: n * (n + 1) / 2
+        # Usamos // para divisiÃ³n entera
         suma = (n * (n + 1)) // 2
         
-        print(f"La suma de los primeros {n} números naturales es: {suma}")
+        print(f"La suma de los primeros {n} nÃºmeros naturales es: {suma}")
         
     except ValueError:
-        print("Debes introducir un número entero.")
+        print("Debes introducir un nÃºmero entero.")
 
 if __name__ == "__main__":
     suma_nnumeros_naturales()

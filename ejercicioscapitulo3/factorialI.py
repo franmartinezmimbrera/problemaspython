@@ -1,5 +1,5 @@
 # fichero factorialI.py
-#Calcula el factorial de un número entero no negativo de forma iterativa
+#Calcula el factorial de un nÃºmero entero no negativo de forma iterativa
 
 def factorial_iterativo(n):
     if n < 0:
@@ -15,9 +15,9 @@ def factorial_iterativo(n):
     return resultado
 
 if __name__ == "__main__":
-    num = int(input("Introduce un número para calcular su factorial: "))
+    num = int(input("Introduce un nÃºmero para calcular su factorial: "))
     res = factorial_iterativo(num)
     if res is not None:
         print(f"{num}! = {res}")
     else:
-        print("El número no puede ser negativo.")
+        print("El nÃºmero no puede ser negativo.")

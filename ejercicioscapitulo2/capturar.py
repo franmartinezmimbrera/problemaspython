@@ -1,4 +1,3 @@
-# -*- coding: iso-8859-15 -*-
 # fichero capturar.py
 # Este programa recopila datos del usuario mediante preguntas
 
@@ -10,11 +9,11 @@ def capturar_datos():
     
     print("\n Datos Recopilados")
     print(f"Nombre: {nombre}")
-    print(f"Edad: {edad} años")
+    print(f"Edad: {edad} aÃ±os")
     print(f"Altura: {altura} m")
 
 if __name__ == "__main__":
     try:
         capturar_datos()
     except ValueError:
-        print("Error: Asegúrate de introducir números válidos para edad y altura.")
+        print("Error: AsegÃºrate de introducir nÃºmeros vÃ¡lidos para edad y altura.")

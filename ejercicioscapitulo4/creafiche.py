@@ -7,10 +7,10 @@ def crear_fichero():
             archivo.write("Esto es una prueba de escritura en Python.\n")
             archivo.write("Python hace que el manejo de ficheros sea muy simple.\n")
         
-        print("Archivo 'datos.txt' creado y escrito con éxito.")
+        print("Archivo 'datos.txt' creado y escrito con Ã©xito.")
         
     except IOError as e:
-        print(f"Ocurrió un error al crear el archivo: {e}")
+        print(f"OcurriÃ³ un error al crear el archivo: {e}")
 
 if __name__ == "__main__":
     crear_fichero()

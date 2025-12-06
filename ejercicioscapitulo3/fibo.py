@@ -1,5 +1,5 @@
 # fichero fibo.py
-# Función iterativa para calcular el n-ésimo número de Fibonacci
+# FunciÃ³n iterativa para calcular el n-Ã©simo nÃºmero de Fibonacci
 
 def fibonacci_iterativo(n):
     if n <= 0:
@@ -14,5 +14,5 @@ def fibonacci_iterativo(n):
     return b
 
 if __name__ == "__main__":
-    k = int(input("Introduce qué término de Fibonacci quieres calcular: "))
+    k = int(input("Introduce quÃ© tÃ©rmino de Fibonacci quieres calcular: "))
     print(f"Fibonacci({k}) = {fibonacci_iterativo(k)}")

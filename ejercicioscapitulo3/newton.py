@@ -24,7 +24,7 @@ def binomio_newton(a, b, n):
         print(f"{comb}*{a}^{n-k}*{b}^{k}", end="")
         
     print(f"\nResultado calculado suma total: {resultado_total}")
-    print(f"Comprobación directa ((a+b)^n): {(a+b)**n}")
+    print(f"ComprobaciÃ³n directa ((a+b)^n): {(a+b)**n}")
 
 if __name__ == "__main__":
     binomio_newton(2, 3, 4)

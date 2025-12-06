@@ -1,19 +1,15 @@
-# -*- coding: iso-8859-15 -*-
 # fichero areatriangulo2.py 
-# Calcula el área de un triáungulo equilátero a partir de uno de sus lados
+# Calcula el Ã¡rea de un triÃ¡ungulo equilÃ¡tero a partir de uno de sus lados
 import math
 
 def area_triangulo_equi():
     
     try:
-        lado = float(input("Introduce el lado del triángulo equilátero: "))
-        
-        # Fórmula: (raiz(3) / 4) * lado^2
+        lado = float(input("Introduce el lado del triÃ¡ngulo equilÃ¡tero: "))
         area = (math.sqrt(3) / 4) * (lado ** 2)
-        
-        print(f"El área del triángulo equilátero es: {area:.4f}")
+        print(f"El Ã¡rea del triÃ¡ngulo equilÃ¡tero es: {area:.4f}")
     except ValueError:
-        print("Error numérico.")
+        print("Error numÃ©rico.")
 
 if __name__ == "__main__":
     area_triangulo_equi()

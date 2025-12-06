@@ -1,19 +1,18 @@
-# -*- coding: iso-8859-15 -*-
 # fichero raizcuadrada.py
-# Este programa calcula la raíz cuadrada de un número
+# Este programa calcula la raÃ­z cuadrada de un nÃºmero
 import math
 
 def calcular_raiz():
     
     try:
-        numero = float(input("Introduce un número: "))
+        numero = float(input("Introduce un nÃºmero: "))
         if numero < 0:
-            print("No se puede calcular la raíz cuadrada real de un número negativo.")
+            print("No se puede calcular la raÃ­z cuadrada real de un nÃºmero negativo.")
         else:
             raiz = math.sqrt(numero)
-            print(f"La raíz cuadrada de {numero} es {raiz:.4f}")
+            print(f"La raÃ­z cuadrada de {numero} es {raiz:.4f}")
     except ValueError:
-        print("Entrada inválida.")
+        print("Entrada invÃ¡lida.")
 
 if __name__ == "__main__":
     calcular_raiz()

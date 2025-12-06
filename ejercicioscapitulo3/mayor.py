@@ -1,5 +1,5 @@
 # fichero mayor.py
-# Este programa calcula cuál es el número mayor de 10 introducidos por teclado 
+# Este programa calcula cuÃ¡l es el nÃºmero mayor de 10 introducidos por teclado 
 
 def encontrar_mayor(lista_numeros):
     if not lista_numeros:
@@ -13,11 +13,11 @@ def encontrar_mayor(lista_numeros):
 
 if __name__ == "__main__":
     numeros = []
-    print("Por favor, introduce 10 números enteros:")
+    print("Por favor, introduce 10 nÃºmeros enteros:")
     
     for i in range(10):
-        val = int(input(f"Número {i+1}: "))
+        val = int(input(f"NÃºmero {i+1}: "))
         numeros.append(val)
         
     el_mayor = encontrar_mayor(numeros)
-    print(f"El número mayor introducido es: {el_mayor}")
+    print(f"El nÃºmero mayor introducido es: {el_mayor}")

@@ -1,15 +1,14 @@
-# -*- coding: iso-8859-15 -*-
 # fichero volumencilindro.py
 # Este programa calcula el volumen de un cilindro
 import math
 def volumen_cilindro():
     try:
-        diametro = float(input("Introduce el di·metro del cilindro: "))
+        diametro = float(input("Introduce el di√°metro del cilindro: "))
         altura = float(input("Introduce la altura del cilindro: "))
         radio = diametro / 2
         volumen = math.pi * (radio ** 2) * altura
         print(f"El volumen del cilindro es: {volumen:.4f}")
     except ValueError:
-        print("Error numÈrico.")
+        print("Error num√©rico.")
 if __name__ == "__main__":
     volumen_cilindro()

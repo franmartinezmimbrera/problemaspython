@@ -1,7 +1,7 @@
 import sqlite3
 
 def conectar_bd():
-    # Crea una conexión a una base de datos local (o en memoria)
+    # Crea una conexiÃ³n a una base de datos local (o en memoria)
     conexion = sqlite3.connect("ejemplo.db")
     cursor = conexion.cursor()
     
@@ -16,7 +16,7 @@ def conectar_bd():
     cursor.execute("SELECT * FROM usuarios")
     print(cursor.fetchall())
     
-    # Cerrar conexión
+    # Cerrar conexiÃ³n
     conexion.close()
 
 if __name__ == "__main__":

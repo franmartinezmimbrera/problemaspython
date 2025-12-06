@@ -2,17 +2,17 @@
 import math
 
 def area_heron(a, b, c):
-    # Semiperímetro
+    # SemiperÃ­metro
     s = (a + b + c) / 2
-    # Fórmula de Herón: raiz(s * (s-a) * (s-b) * (s-c))
+    # FÃ³rmula de HerÃ³n: raiz(s * (s-a) * (s-b) * (s-c))
     try:
         area = math.sqrt(s * (s - a) * (s - b) * (s - c))
         return area
     except ValueError:
-        return -1 # Retornamos -1 si los lados no forman un triángulo válido
+        return -1 # Retornamos -1 si los lados no forman un triÃ¡ngulo vÃ¡lido
 
 if __name__ == "__main__":
-    print("Introduce los lados del triángulo:")
+    print("Introduce los lados del triÃ¡ngulo:")
     l1 = float(input("Lado A: "))
     l2 = float(input("Lado B: "))
     l3 = float(input("Lado C: "))
@@ -20,6 +20,6 @@ if __name__ == "__main__":
     resultado = area_heron(l1, l2, l3)
     
     if resultado != -1:
-        print(f"El área del triángulo es: {resultado:.2f}")
+        print(f"El Ã¡rea del triÃ¡ngulo es: {resultado:.2f}")
     else:
-        print("Los lados proporcionados no forman un triángulo válido.")
+        print("Los lados proporcionados no forman un triÃ¡ngulo vÃ¡lido.")

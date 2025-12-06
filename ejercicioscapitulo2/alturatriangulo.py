@@ -1,20 +1,14 @@
-# -*- coding: iso-8859-15 -*-
 # fichero alturatriangulo.py
-# Este programa calcula la altura de un tri·ngulo equilatero
-
+# Este programa calcula la altura de un tri√°ngulo equilatero
 import math
 
 def altura_triangulo_equi():
 
     try:
-        lado = float(input("Introduce el lado del tri·ngulo equil·tero: "))
-        
+        lado = float(input("Introduce el lado del tri√°ngulo equil√°tero: "))
         altura = (math.sqrt(3) * lado) / 2
-        
-        print(f"La altura del tri·ngulo es: {altura:.4f}")
-        
+        print(f"La altura del tri√°ngulo es: {altura:.4f}")
     except ValueError:
-        print("Error numÈrico.")
-
+        print("Error num√©rico.")
 if __name__ == "__main__":
     altura_triangulo_equi()

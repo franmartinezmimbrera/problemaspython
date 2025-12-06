@@ -1,8 +1,8 @@
-# fichero invierte.cpp 
-#Este ejercicio implementa la inversión de una cadena de texto dada
+# fichero invierte.py
+#Este ejercicio implementa la inversiÃ³n de una cadena de texto dada
 
 def invertir_manual(cadena):
-    # En Python las cadenas son inmutables, así que las convertimos a lista
+    # En Python las cadenas son inmutables, asÃ­ que las convertimos a lista
     lista_caracteres = list(cadena)
     inicio = 0
     fin = len(lista_caracteres) - 1

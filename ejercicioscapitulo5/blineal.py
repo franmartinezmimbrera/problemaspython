@@ -1,7 +1,7 @@
 # fichero blineal.py 
 
 def busqueda_lineal(lista, objetivo):
-    #Devuelve el  índice del elemento o -1 si no existe.
+    #Devuelve el  Ã­ndice del elemento o -1 si no existe.
     for i in range(len(lista)):
         if lista[i] == objetivo:
             return i
@@ -14,6 +14,6 @@ if __name__ == "__main__":
     posicion = busqueda_lineal(datos, buscado)
     
     if posicion != -1:
-        print(f"Número {buscado} encontrado en í­ndice {posicion}.")
+        print(f"NÃºmero {buscado} encontrado en Ã­ndice {posicion}.")
     else:
-        print(f"Número {buscado} no encontrado.")
+        print(f"NÃºmero {buscado} no encontrado.")

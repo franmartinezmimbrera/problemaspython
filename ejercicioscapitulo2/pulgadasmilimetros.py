@@ -1,12 +1,11 @@
-# -*- coding: iso-8859-15 -*-
 # fichero pulgadasmilimetros.py 
-# Este programa cambia pulgadas por milímetros
+# Este programa cambia pulgadas por milÃ­metros
 def pulgadas_a_mm():
     FACTOR = 25.4
     try:
         pulgadas = float(input("Introduce valor en pulgadas: "))
         milimetros = pulgadas * FACTOR
-        print(f"{pulgadas} pulgadas son {milimetros} milímetros.")
+        print(f"{pulgadas} pulgadas son {milimetros} milÃ­metros.")
     except ValueError:
         print("Error de entrada.")
 if __name__ == "__main__":

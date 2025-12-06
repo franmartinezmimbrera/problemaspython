@@ -1,16 +1,13 @@
 #fichero MCD1.py 
-
 def mcd_euclides(a, b):
-    #función que devuelve el MCD de dos números.
     while b > 0:
         a, b = b, a % b
     return a
-
 if __name__ == "__main__":
     try:
-        n1 = int(input("Número 1: "))
-        n2 = int(input("Número 2: "))
+        n1 = int(input("NÃºmero 1: "))
+        n2 = int(input("NÃºmero 2: "))
         resultado = mcd_euclides(n1, n2)
-        print(f"El MCD calculado por función es: {resultado}")
+        print(f"El MCD calculado por funciÃ³n es: {resultado}")
     except ValueError:
         print("Error en la entrada de datos.")

@@ -1,6 +1,5 @@
-# -*- coding: iso-8859-15 -*-
 # fichero perimetrocir.py
-# Este programa calcula el perÌmetro de una circunferencia
+# Este programa calcula el per√≠metro de una circunferencia
 import math # Necesario para usar math.pi
 
 def perimetro_circunferencia():
@@ -9,9 +8,9 @@ def perimetro_circunferencia():
         radio = float(input("Introduce el radio de la circunferencia: "))
         perimetro = 2 * math.pi * radio
         
-        print(f"El perÌmetro es: {perimetro:.4f}")
+        print(f"El per√≠metro es: {perimetro:.4f}")
     except ValueError:
-        print("Entrada inv·lida.")
+        print("Entrada inv√°lida.")
 
 if __name__ == "__main__":
     perimetro_circunferencia()

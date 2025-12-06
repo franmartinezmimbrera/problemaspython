@@ -1,6 +1,6 @@
 # fichero binterpola.py
 def busqueda_interpolacion(lista, objetivo):
-    #Requiere lista ORDENADA y distribuci髇 UNIFORME.
+    #Requiere lista ORDENADA y distribuci贸n UNIFORME.
    
     bajo = 0
     alto = len(lista) - 1
@@ -11,7 +11,7 @@ def busqueda_interpolacion(lista, objetivo):
                 return bajo
             return -1
         
-        # F髍mula de interpolaci髇 para estimar posici髇
+        # F贸rmula de interpolaci贸n para estimar posici贸n
         # pos = lo + [ (x-arr[lo]) * (hi-lo) / (arr[hi]-arr[lo]) ]
         pos = bajo + int(((float(alto - bajo) / (lista[alto] - lista[bajo])) * (objetivo - lista[bajo])))
         
@@ -33,6 +33,6 @@ if __name__ == "__main__":
     idx = busqueda_interpolacion(datos, buscado)
     
     if idx != -1:
-        print(f"Elemento {buscado} encontrado en 韓dice {idx} mediante interpolaci髇.")
+        print(f"Elemento {buscado} encontrado en 铆ndice {idx} mediante interpolaci贸n.")
     else:
         print("Elemento no encontrado.")

@@ -1,17 +1,17 @@
 # fichero tipotriangulo.py 
-# Este programa calcula el tipo de triángulo en función de los lados
+# Este programa calcula el tipo de triÃ¡ngulo en funciÃ³n de los lados
 def tipo_triangulo():
-    print("Introduce los tres lados del triángulo:")
+    print("Introduce los tres lados del triÃ¡ngulo:")
     a = float(input("Lado A: "))
     b = float(input("Lado B: "))
     c = float(input("Lado C: "))
     
     if a == b and b == c:
-        print("El triángulo es EQUILÁTERO.")
+        print("El triÃ¡ngulo es EQUILÃTERO.")
     elif a == b or a == c or b == c:
-        print("El triángulo es ISÓSCELES.")
+        print("El triÃ¡ngulo es ISÃ“SCELES.")
     else:
-        print("El triángulo es ESCALENO.")
+        print("El triÃ¡ngulo es ESCALENO.")
 
 if __name__ == "__main__":
     tipo_triangulo()

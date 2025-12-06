@@ -1,5 +1,5 @@
 # fichero conteo.py
-# Este ejercicio nos presenta la conversión de cadenas a letras mayúsculas y contar sus vocales
+# Este ejercicio nos presenta la conversiÃ³n de cadenas a letras mayÃºsculas y contar sus vocales
 
 def procesar_cadenas():
     # Usamos una lista como si fuera un vector de strings
@@ -13,7 +13,7 @@ def procesar_cadenas():
     
     print("\n--- Resultados ---")
     for frase in frases:
-        # Convertir a mayúsculas
+        # Convertir a mayÃºsculas
         frase_upper = frase.upper()
         
         # Contar vocales
@@ -23,8 +23,8 @@ def procesar_cadenas():
                 num_vocales += 1
                 
         print(f"Original: {frase}")
-        print(f"Mayúsculas: {frase_upper}")
-        print(f"Número de vocales: {num_vocales}")
+        print(f"MayÃºsculas: {frase_upper}")
+        print(f"NÃºmero de vocales: {num_vocales}")
         print("-" * 20)
 
 if __name__ == "__main__":
