@@ -1,19 +1,17 @@
 # fichero capturar.py
-# Este programa recopila datos del usuario mediante preguntas
+# Este programa recopila datos del usuario de forma segura
 
-def capturar_datos():
-    
-    nombre = input("Introduce tu nombre (texto): ")
+try:
+
+    nombre = input("Introduce tu nombre (texto): ")    
     edad = int(input("Introduce tu edad (entero): "))
-    altura = float(input("Introduce tu altura en metros (decimal): "))
-    
-    print("\n Datos Recopilados")
+    altura = float(input("Introduce tu altura en metros (decimal con punto): "))
+
     print(f"Nombre: {nombre}")
     print(f"Edad: {edad} años")
     print(f"Altura: {altura} m")
 
-if __name__ == "__main__":
-    try:
-        capturar_datos()
-    except ValueError:
-        print("Error: Asegúrate de introducir números válidos para edad y altura.")
+except ValueError:
+    print("\n[!] ERROR CRÍTICO:")
+    print("Has introducido un texto donde se esperaba un número.")
+    print("Por favor, reinicia el programa e introduce datos válidos (ej: edad 25, altura 1.75).")

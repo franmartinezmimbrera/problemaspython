@@ -1,20 +1,10 @@
 # fichero binomiosuma.py
-# Este programa calcula el binomio de suma de a+b al cuadrado 
-
-def binomio_cuadrado():
-
-    print("Cálculo de (a + b)^2")
-
-    try:
-        a = float(input("Introduce a: "))
-        b = float(input("Introduce b: "))
-        
-        resultado = (a ** 2) + (b ** 2) + (2 * a * b)
-        
-        print(f"El resultado del binomio al cuadrado es: {resultado}")
-        
-    except ValueError:
-        print("Error numérico.")
-
-if __name__ == "__main__":
-    binomio_cuadrado()
+# Este programa calcula el binomio de suma de (a + b) al cuadrado 
+try:
+    a = float(input("Introduce el valor de a: "))
+    b = float(input("Introduce el valor de b: ")) 
+    # Fórmula (a^2 + b^2 + 2ab)    
+    resultado = (a ** 2) + (b ** 2) + (2 * a * b)
+    print(f"El resultado de ({a} + {b})^2 es: {resultado}")
+except ValueError:
+    print("Error: Entrada no válida. Por favor, introduce números.")

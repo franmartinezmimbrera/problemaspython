@@ -1,22 +1,17 @@
 # fichero preciomedio.py 
-# Este programa calcula el precio medio de un producto
+# Este programa calcula el precio medio de un producto a partir de 3 precios
 
-def precio_medio():
+try:
+    print("Por favor, introduce el precio del producto en 3 establecimientos distintos:")
 
-    try:
+    p1 = float(input("Precio en establecimiento 1: "))
+    p2 = float(input("Precio en establecimiento 2: "))
+    p3 = float(input("Precio en establecimiento 3: "))
     
-        print("Introduce el precio del producto en 3 establecimientos:")
-    
-        p1 = float(input("Precio 1: "))
-        p2 = float(input("Precio 2: "))
-        p3 = float(input("Precio 3: "))
-        
-        media = (p1 + p2 + p3) / 3
-    
-        print(f"El precio medio del producto es: {media:.2f} €")
-        
-    except ValueError:
-        print("Error en la entrada de datos.")
 
-if __name__ == "__main__":
-    precio_medio()
+    media = (p1 + p2 + p3) / 3
+
+    print(f"\nEl precio medio del producto es: {media:.2f} €")
+    
+except ValueError:
+    print("Error: Entrada inválida. Asegúrate de introducir números (ej: 12.50).")
